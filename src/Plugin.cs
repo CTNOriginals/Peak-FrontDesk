@@ -10,23 +10,21 @@ namespace FrontDesk;
 // https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-namespaces
 
 [BepInAutoPlugin]
-public partial class Plugin : BaseUnityPlugin
-{
-    internal static ManualLogSource Log { get; private set; } = null!;
+public partial class Plugin : BaseUnityPlugin {
+	internal static ManualLogSource Log { get; private set; } = null!;
 
-    private void Awake()
-    {
-        // BepInEx gives us a logger which we can use to log information.
-        // See https://lethal.wiki/dev/fundamentals/logging
-        Log = Logger;
+	private void Awake() {
+		// BepInEx gives us a logger which we can use to log information.
+		// See https://lethal.wiki/dev/fundamentals/logging
+		Log = Logger;
 
-        // BepInEx also gives us a config file for easy configuration.
-        // See https://lethal.wiki/dev/intermediate/custom-configs
+		// BepInEx also gives us a config file for easy configuration.
+		// See https://lethal.wiki/dev/intermediate/custom-configs
 
-        // We can apply our hooks here.
-        // See https://lethal.wiki/dev/fundamentals/patching-code
+		// We can apply our hooks here.
+		// See https://lethal.wiki/dev/fundamentals/patching-code
 
-        // Log our awake here so we can see it in LogOutput.log file
-        Log.LogInfo($"Plugin {Name} is loaded!");
-    }
+		// Log our awake here so we can see it in LogOutput.log file
+		Log.LogInfo($"Plugin {Name} is loaded!");
+	}
 }

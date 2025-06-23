@@ -13,6 +13,8 @@ NuGet.[C|c]onfig
 /libs/**
 !/libs/.gitkeep
 
+/artifacts/
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/csharp
 # Edit at https://www.toptal.com/developers/gitignore?templates=csharp
