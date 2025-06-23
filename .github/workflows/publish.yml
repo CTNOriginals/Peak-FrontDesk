@@ -1,6 +1,7 @@
 name: Publish
 
 on:
+  workflow_dispatch:
   push:
     tags: ["v[0-9]+.[0-9]+.[0-9]+", "v[0-9]+.[0-9]+.[0-9]+-dev"]
 
@@ -32,4 +33,4 @@ jobs:
         env:
           TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
         run: |
-          dotnet pack -c Release --no-build -target:PublishThunderstore
+          dotnet build -c Release -target:PackTS -v d -property:PublishTS=true
