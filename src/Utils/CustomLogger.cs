@@ -14,8 +14,8 @@ public static class CLogger {
 	public static void LogException(string message, SystemException exception) { SendLog(message, "LogException", exception: exception); }
 	public static void LogException(string message, Exception exception) { SendLog(message, "LogException", exception: exception); }
 
-	private static void SendLog(string message, string level = null, Exception exception = null) {
-		// if (!Plugin.DebugMode && (level == "LogDebug" || level == "LogInfo")) return;
+	private static void SendLog(string message, string? level = null, Exception? exception = null) {
+		if (!Plugin.DebugMode && (level == "LogDebug" || level == "LogInfo")) return;
 
 		switch(level) {
 			case "LogInfo": 	Plugin.Log.LogInfo(message); 	break;

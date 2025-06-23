@@ -1,3 +1,2 @@
-# Changelog
-
-You can follow this format for your changelog: <https://keepachangelog.com/en/1.1.0/>
+# 1.0.0 (RELEASE 23-06-2025)
+- Initial release

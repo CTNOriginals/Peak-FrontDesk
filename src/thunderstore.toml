@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 repository = "https://thunderstore.io"
 
 [package]
-namespace = "FrontDesk"
+namespace = "CTNOriginals"
 name = "FrontDesk"
 description = "Moves the boarding desk from across the airport to the entrance instead to save you the long commute."
 websiteUrl = "https://github.com/CTNOriginals/PEAK-FrontDesk"
@@ -34,9 +34,9 @@ target = "/"
 [publish]
 # See communities at:
 # https://thunderstore.io/api/experimental/community/
-communities = [ "peak", ]
+communities = [ "peak" ]
 
 [publish.categories]
 # See categories at:
 # https://thunderstore.io/api/experimental/community/peak/category/
-peak = [ "mods", "misc", ]
+peak = [ "mods", "misc" ]
