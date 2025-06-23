@@ -4,7 +4,6 @@
 *.ahk
 /.vscode/
 *.bat
-NuGet.[C|c]onfig
 /resources/**
 !/resources/preview*.*
 
